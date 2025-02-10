@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import entity.Todo;
+import jakarta.validation.Valid;
 import service.TodoService;
 
 @RestController
@@ -24,7 +25,7 @@ public class TodoController {
 	}
 
 	@PostMapping
-	List<Todo> create(@RequestBody Todo todo){
+	List<Todo> create(@RequestBody @Valid Todo todo){
 		return todoService.create(todo);
 	}
 	
