@@ -23,8 +23,8 @@ Certifique-se de ter instalado:
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seuusuario/todo-list.git
-   cd todo-list
+   git clone https://github.com/RafaelCantovitzBueno/Todo-list.git
+   cd Todo-list
    ```
 
 2. Configure o banco de dados no `application.properties`:
